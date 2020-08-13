@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>個人情報を編集</title>
+    <link rel="stylesheet" href="../css/registrationinformation.css">
+</head>
+
+<body>
+    <div class="main">
+        <article>
+
+            <p class="save"><a href="#">保存</a></p>
+            <h1>個人情報を編集</h1>
+
+            <form action="#">
+                <p class="contents"><label for="firstname">名</label></p>
+                <input class="text" type="text" name="firstname" id="firstname" placeholder="Liang">
+                <p class="border"></p>
+
+                <p class="contents"><label for="lastname">姓</label></p>
+                <input class="text" type="text" name="lastname" id="lastname" placeholder="Guo">
+                <p class="border"></p>
+
+                <p class="contents">性別</p>
+                <p>
+                    <select name="gender">
+                        <option value="" hidden>性別を選択</option>
+                        <option value="male" label="男性">男性</option>
+                        <option value="female" label="女性">女性</option>
+                    </select>
+                </p>
+                <p class="border"></p>
+
+                <p class="contents">生年月日</p>
+                <input class="date" type="date" name="date">
+                <p class="border"></p>
+
+                <p class="contents">メール</p>
+                <p>kakuryou@hotmail.com<a href="mail.html">編集</a></p>
+                <p class="border"></p>
+
+                <p class="contents">電話番号</p>
+                <p>09012345678<a href="phone.html">編集</a></p>
+                <p class="border"></p>
+
+                <p class="contents"></p>
+                <p class="certificate">身分証明書<a href="#">編集</a></p>
+                <p class="border"></p>
+            </form>
+        </article>
+    </div>
+</body>
+
+</html>
