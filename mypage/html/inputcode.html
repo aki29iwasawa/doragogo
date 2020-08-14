@@ -3,23 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>メールアドレスを編集</title>
-    <link rel="stylesheet" href="../css/mail.css">
+    <title>パスコード入力</title>
+    <link rel="stylesheet" href="../css/inputcode.css">
 </head>
 
 <body>
     <article>
-        <div>
+        <section>
+
             <h1>4桁のコードを入力してください</h1>
-            <p>確認コードは090-0000-0000にお送りしました。届いたコードをご入力ください。</p>
+            <p>確認コードは090-0000-0000にお送りしました。</p>
+            <p>届いたコードをご入力ください。</p>
 
             <form action="#">
 
+                <input class="text" type="tel" pattern="^[0-9]+$" name="code" id="code" placeholder="4桁の数字を半角で入力" maxlength="4">
+                <p class="border"></p>
+                <input class="submit" type="submit" value="送信">
 
             </form>
+
             <p>まだ届いていませんか？<a href="#">再度試す</a></p>
             <p><a href="#">音声通話で受け取る</a></p>
-        </div>
+
+        </section>
     </article>
 </body>
 

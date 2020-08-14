@@ -4,27 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <title>メールアドレスを編集</title>
-    <link rel="stylesheet" href="../css/mail.css">
+    <link rel="stylesheet" href="../css/mail-phone.css">
 </head>
 
 <body>
     <article>
-        <div>
-            <p　class="save">保存</p>
+
+        <p　class="save"><a href="#">保存</a></p>
+
+            <section>
                 <h1>メールアドレスを更新</h1>
                 <p>Airbnbのパスワードも入力してください。</p>
                 <p>新しいメールアドレス確認のため、メールを送信いたします。</p>
+            </section>
 
-                <form action="#">
+            <form action="#">
 
-                    <p><label for="mail">メールアドレス</label></p>
-                    <input type="email" name="mail" id="mail" placeholder="Email">
+                <p class="contents"><label for="mail">メールアドレス</label></p>
+                <input class="text" type="email" name="mail" id="mail" placeholder="Email">
+                <p class="border"></p>
 
-                    <p><label for="password">Airbnbのパスワード</label></p>
-                    <input type="password" name="password" id="password" placeholder="パスワードを入力">
+                <p class="contents"><label for="password">Airbnbのパスワード</label></p>
+                <input class="text" type="password" name="password" id="password" placeholder="パスワードを入力">
+                <p class="border"></p>
 
-                </form>
-        </div>
+            </form>
+
     </article>
 </body>
 

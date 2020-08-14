@@ -1,4 +1,7 @@
 @charset "UTF-8";
+
+/*--------共通部分CSS-----------------*/
+
 body {
     background-color: rgb(188, 224, 218);
 }
@@ -9,7 +12,7 @@ article {
     height: 100%;
     border-radius: 30px;
     margin: 0 auto;
-    padding: 20px 50px;
+    padding: 100px 50px;
     color: rgb(70, 70, 70);
     box-sizing: border-box;
 }
@@ -17,7 +20,6 @@ article {
 a {
     float: right;
     margin-right: 30px;
-    text-decoration: none;
     font-size: 20px;
     font-weight: 600;
     color: rgb(35, 116, 101);
@@ -28,13 +30,17 @@ a:hover {
 }
 
 h1 {
-    margin: 20px 20px 40px 20px;
     clear: both;
+    margin-bottom: 40px;
     font-size: 30px;
 }
 
+section {
+    margin: 20px;
+}
+
 form {
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .contents {
@@ -42,15 +48,6 @@ form {
     margin: 10px;
     font-size: 18px;
     font-weight: 600;
-}
-
-.contents:first-child {
-    padding-top: 0;
-    margin-top: 0;
-}
-
-.contents:last-child {
-    margin-top: 30px;
 }
 
 .text {
@@ -69,21 +66,30 @@ form {
     outline: none;
 }
 
-select,
-.date {
-    height: 35px;
-    font-size: 18px;
-    padding: 5px;
-    margin-bottom: 10px;
-}
-
 .border {
     margin: 5px 0 5px;
     border-bottom: solid 1px rgb(35, 116, 101);
 }
 
-.certificate {
+
+/*------------電話番号入力画面用　CSS-------------------------------*/
+
+button {
+    float: right;
     font-size: 18px;
-    margin: 1em 0 1em 10px;
-    font-weight: 600;
+    padding: 0.3em 1em;
+    margin: 30px 10px;
+    background-color: rgb(107, 197, 182);
+    border: solid 2px rgb(107, 197, 182);
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255, 0.700);
+    color: rgb(70, 70, 70);
+}
+
+p {
+    clear: both;
 }
