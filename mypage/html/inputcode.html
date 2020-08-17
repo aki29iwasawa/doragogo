@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>パスコード入力</title>
     <link rel="stylesheet" href="../css/inputcode.css">
+    <script src="../js/phone.js" defer></script>
 </head>
 
 <body>
@@ -15,7 +16,7 @@
             <p>確認コードは090-0000-0000にお送りしました。</p>
             <p>届いたコードをご入力ください。</p>
 
-            <form action="#">
+            <form action="#" name="form2" onsubmit="return checkcode()">
 
                 <input class="text" type="tel" pattern="^[0-9]+$" name="code" id="code" placeholder="4桁の数字を半角で入力" maxlength="4">
                 <p class="border"></p>

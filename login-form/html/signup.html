@@ -6,6 +6,7 @@
     <title>Sign in</title>
     <meta name="description" content="DoraGoGoに新規登録">
     <link rel="stylesheet" href="../css/signup.css">
+    <script src="../js/signup.js" defer></script>
 </head>
 
 <body>
@@ -15,16 +16,16 @@
         <div class="main">
             <h2>Sign Up</h2>
 
-            <form>
+            <form action="#" name="form" onsubmit="return check()">
 
                 <p><label for="mail">アカウントID</label></p>
                 <input class="box" type="email" name="mail" id="mail" placeholder="Email">
 
                 <p><label for="first-password">パスワード</label></p>
-                <input class="box" type="password" name="first-password" id="first-password" placeholder="●●●●●●">
+                <input class="box" type="password" name="firstpassword" id="first-password" placeholder="●●●●●●">
 
                 <p><label for="second-password">パスワードをもう一度入力</label></p>
-                <input class="box" type="password" name="second-password" id="second-password" placeholder="●●●●●●">
+                <input class="box" type="password" name="secondpassword" id="second-password" placeholder="●●●●●●">
 
                 <p><input type="checkbox" name="terms" value="1"><a href="#">利用規約</a>に同意しました</p>
 

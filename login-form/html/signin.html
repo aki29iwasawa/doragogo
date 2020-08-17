@@ -6,6 +6,7 @@
     <title>Sign in</title>
     <meta name="description" content="DoraGoGoにサインイン">
     <link rel="stylesheet" href="../css/signin.css">
+    <script src="../js/signin.js" defer></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <div>
             <h1>Sign In</h1>
 
-            <form action="#">
+            <form action="#" name="form" onsubmit="return check()">
 
                 <p><label for="mail">アカウントID</label></p>
                 <input class="box" type="email" name="mail" id="mail" placeholder="Email">

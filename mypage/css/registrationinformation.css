@@ -27,6 +27,21 @@ a:hover {
     color: rgb(53, 180, 157);
 }
 
+.save {
+    float: right;
+    margin-right: 30px;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(245, 222, 179, 0);
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(35, 116, 101);
+}
+
+.save:hover {
+    color: rgb(53, 180, 157);
+}
+
 h1 {
     margin: 20px 20px 40px 20px;
     clear: both;

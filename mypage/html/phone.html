@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>電話番号を編集</title>
     <link rel="stylesheet" href="../css/mail-phone.css">
+    <script src="../js/phone.js" defer></script>
 </head>
 
 <body>
@@ -15,13 +16,13 @@
         </section>
 
         <section>
-            <form action="#">
+            <form action="#" name="form" onsubmit="return check()">
 
                 <p class="contents"><label for="tel">電話番号</label></p>
                 <input class="text" type="tel" name="tel" id="tel" placeholder="090-0000-0000">
                 <p class="border"></p>
 
-                <p><button type="button" onclick="location.href='inputcode.html'">次へ</button></p>
+                <input class="next" type="submit" value="次へ">
 
             </form>
         </section>

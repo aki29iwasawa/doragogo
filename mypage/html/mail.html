@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <title>メールアドレスを編集</title>
     <link rel="stylesheet" href="../css/mail-phone.css">
+    <script src="../js/mail.js" defer></script>
 </head>
 
 <body>
     <article>
-
-        <p　class="save"><a href="#">保存</a></p>
+        <form action="#" name="form" onsubmit="return check()">
+            <input class="save" type="submit" value="保存">
 
             <section>
                 <h1>メールアドレスを更新</h1>
@@ -18,17 +19,17 @@
                 <p>新しいメールアドレス確認のため、メールを送信いたします。</p>
             </section>
 
-            <form action="#">
 
-                <p class="contents"><label for="mail">メールアドレス</label></p>
-                <input class="text" type="email" name="mail" id="mail" placeholder="Email">
-                <p class="border"></p>
 
-                <p class="contents"><label for="password">Airbnbのパスワード</label></p>
-                <input class="text" type="password" name="password" id="password" placeholder="パスワードを入力">
-                <p class="border"></p>
+            <p class="contents"><label for="mail">メールアドレス</label></p>
+            <input class="text" type="email" name="mail" id="mail" placeholder="Email">
+            <p class="border"></p>
 
-            </form>
+            <p class="contents"><label for="password">Airbnbのパスワード</label></p>
+            <input class="text" type="password" name="password" id="password" placeholder="パスワードを入力">
+            <p class="border"></p>
+
+        </form>
 
     </article>
 </body>
