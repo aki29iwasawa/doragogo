@@ -9,43 +9,17 @@ article {
     height: 100%;
     border-radius: 30px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 50px 30px;
     color: rgb(70, 70, 70);
     box-sizing: border-box;
-}
-
-h1 {
-    margin-bottom: 40px;
-    font-size: 30px;
 }
 
 form {
     padding: 20px;
 }
 
-.choice {
-    float: right;
-}
-
-.contents {
-    clear: both;
-    padding-top: 30px;
-    margin: 10px;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.contents:first-child {
-    padding-top: 0;
-    margin-top: 0;
-}
-
-.button {
-    text-align: center;
-    margin-top: 30px;
-}
-
 button {
+    float: right;
     font-size: 18px;
     padding: 0.3em 1em;
     margin: 30px 10px;
@@ -58,4 +32,29 @@ button {
 button:hover {
     background-color: rgb(255, 255, 255, 0.700);
     color: rgb(70, 70, 70);
+}
+
+h1 {
+    float: left;
+    margin: 30px 10px;
+    font-size: 30px;
+}
+
+section {
+    clear: both;
+    margin: 30px 10px;
+}
+
+.input {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div {
+    margin-left: 10px;
+}
+
+.border {
+    margin: 5px 0 5px;
+    border-bottom: solid 1px rgb(35, 116, 101);
 }

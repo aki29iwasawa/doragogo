@@ -24,38 +24,52 @@ div.innerHTML = "<h1>Sign In<h1>";
 /*ーーーー<form>の作成ーーーー */
 
 var form = document.createElement("form");
+form.action = "#";
 form.name = "form";
-/*form.onsubmit="return check"*/
+
+form.onsubmit = "return check()";
 
 div.appendChild(form);
 
+
+/*
+function check() {
+
+    var count = 0;
+
+    if (document.form.mail.value == "") {
+        count = 1;
+    } else if (document.form.password.value == "") {
+        count = 1;
+    }
+
+    if (count) {
+        alert('未入力項目があります');
+        return false;
+    } else {
+        return true;
+    }
+
+}*/
+
+
+
+
 /*ーメールアドレスー*/
 
-form.innerHTML = "<p><label for='mail'>アカウントID</label></p>";
-
-var input = document.createElement("input");
-input.classList.add("box");
-input.type = "email";
-input.name = "mail"
-input.id = "mail";
-input.placeholder = "Email";
-
-form.appendChild(input);
+form.innerHTML = "<p><label for='mail'>アカウントID</label></p >";
+form.innerHTML = form.innerHTML + "<input class=box type=email name=mail id=mail placeholder='Email' />";
 
 
 /*ーパスワードー*/
-/*
-form.innerHTML = "<p><label for='password'>パスワード</label></p>";
 
-var input2 = document.createElement("input");
-input2.classList.add("box");
-input2.type = "password";
-input2.name = "password";
-input2.id = "password";
-input2.placeholder = "●●●●●●";
+form.innerHTML = form.innerHTML + "<p><label for='password'>パスワード</label></p >";
+form.innerHTML = form.innerHTML + "<input class=box name=passeord id=password type=password placeholder='●●●●●●' />";
 
-form.appendChild(input2);
 
+/*ーsubmitボタンー */
+
+form.innerHTML = form.innerHTML + "<input class='button' type='submit' value='Sign in'>";
 
 
 
