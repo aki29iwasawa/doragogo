@@ -1,0 +1,93 @@
+@charset "UTF-8";
+body {
+    background-color: rgb(188, 224, 218);
+}
+
+article {
+    background-color: rgb(255, 255, 255, 0.700);
+    width: 680px;
+    height: 100%;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 20px 50px 40px;
+    color: rgb(70, 70, 70);
+    box-sizing: border-box;
+}
+
+form {
+    padding: 20px;
+}
+
+.back {
+    float: left;
+    margin-right: 30px;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(245, 222, 179, 0);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(35, 116, 101);
+}
+
+.back:hover {
+    color: rgb(53, 180, 157);
+}
+
+.save {
+    float: right;
+    margin-right: 30px;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(245, 222, 179, 0);
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(35, 116, 101);
+}
+
+.save:hover {
+    color: rgb(53, 180, 157);
+}
+
+h1 {
+    margin: 50px 20px 20px;
+    clear: both;
+    font-size: 30px;
+}
+
+.attention {
+    margin: 0 0 20px;
+    float: right;
+}
+
+section {
+    clear: both;
+    border: 1px solid rgb(35, 116, 101);
+    background-color: rgba(255, 255, 255, 0.700);
+    padding: 0 20px 0;
+}
+
+p {
+    clear: both;
+}
+
+div {
+    margin: 50px 0 50px;
+}
+
+.delete {
+    color: rgba(0, 0, 0, 0.5);
+    float: right;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(245, 222, 179, 0);
+    font-size: 20px;
+}
+
+.delete:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.border {
+    margin: 5px 0 5px;
+    border-bottom: solid 1px rgb(35, 116, 101);
+}

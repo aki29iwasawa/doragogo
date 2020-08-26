@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>マイページ</title>
-    <link rel="stylesheet" href="../css/mypage.css">
-    <script src="../js/mypage.js" defer></script>
+    <link rel="stylesheet" href="mypage.css">
+    <script src="mypage.js" defer></script>
 </head>
 
 <body>
     <article>
         <section>
-            <img class="photo" src="../img/sample.png" alt="顔写真">
+            <img class="photo" src="img/sample.png" alt="顔写真">
             <h2>名前</h2>
             <div class="addressqr">
                 <div class="address">
@@ -20,7 +20,7 @@
                 </div>
                 <div class="qr">
                     <p>QRコード</p>
-                    <img src="../img/QRsample.png" alt="QRコード">
+                    <img src="img/QRsample.png" alt="QRコード">
                 </div>
             </div>
             <div class="gauge">
@@ -37,13 +37,13 @@
         </section>
         <section>
             <h2>履歴書</h2>
-            <button type="button" onclick="location.href='#'">職務履歴</button>
-            <button type="button" onclick="location.href='#'">学歴</button>
-            <button type="button" onclick="location.href='#'">語学力・資格</button>
-            <button type="button" onclick="location.href='#'">経験・スキル</button>
+            <button type="button" onclick="workexperience()">職務履歴</button>
+            <button type="button" onclick="educational()">学歴</button>
+            <button type="button" onclick="language()">語学力・資格</button>
+            <button type="button" onclick="skill()">経験・スキル</button>
             <button type="button" onclick="desiredcondition()">希望条件</button>
-            <button type="button" onclick="location.href='#'">職務経歴書<br>アップロード</button>
-            <button type="button" onclick="location.href='#'">PDF<br>ダウンロード</button>
+            <button type="button" onclick="upload()">職務経歴書<br>アップロード</button>
+            <button type="button" onclick="download()">PDF<br>ダウンロード</button>
         </section>
         <section>
             <button type="button" onclick="location.href='#'">財布</button>
