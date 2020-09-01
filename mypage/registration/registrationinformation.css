@@ -5,8 +5,7 @@ body {
 
 article {
     background-color: rgb(255, 255, 255, 0.700);
-    width: 680px;
-    height: 100%;
+    width: 50%;
     border-radius: 30px;
     margin: 0 auto;
     padding: 20px 50px;
@@ -14,6 +13,8 @@ article {
     box-sizing: border-box;
 }
 
+
+/*
 a {
     float: right;
     margin-right: 30px;
@@ -26,8 +27,10 @@ a {
 a:hover {
     color: rgb(53, 180, 157);
 }
+*/
 
 .save {
+    /*ボタンを緑の文字のみのリンクに変更*/
     float: right;
     margin-right: 30px;
     text-decoration: none;

@@ -5,8 +5,8 @@ body {
 
 article {
     background-color: rgba(255, 255, 255, 0.700);
-    width: 400px;
-    height: 570px;
+    width: 30%;
+    height: 70%;
     border-radius: 30px;
     margin: 0 auto;
     padding: 10px 30px 20px 30px;
@@ -23,7 +23,7 @@ img {
 div {
     background-color: rgba(255, 255, 255, 0.700);
     border-radius: 20px;
-    height: 250px;
+    height: 50%;
     margin: 0 auto;
     margin: 0;
     padding: 20px;
@@ -33,6 +33,10 @@ h1 {
     font-size: 26px;
     margin: 0 0 20px;
     text-align: center;
+}
+
+.attention {
+    color: red;
 }
 
 form p {

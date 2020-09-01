@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(188, 224, 218);
+}
+
+article {
+    background-color: rgb(255, 255, 255, 0.700);
+    width: 50%;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 20px 50px;
+    color: rgb(70, 70, 70);
+    box-sizing: border-box;
+}
