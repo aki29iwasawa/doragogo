@@ -5,38 +5,22 @@ body {
 
 article {
     background-color: rgb(255, 255, 255, 0.700);
-    width: 680px;
-    height: 100%;
+    width: 55%;
+    min-width: 650px;
     border-radius: 30px;
     margin: 0 auto;
-    padding: 20px 50px 40px;
+    padding: 20px 50px;
     color: rgb(70, 70, 70);
     box-sizing: border-box;
 }
 
-form {
-    padding: 20px;
-}
-
-.back {
-    float: left;
-    margin-right: 30px;
-    text-decoration: none;
-    border: none;
-    background-color: rgba(245, 222, 179, 0);
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(35, 116, 101);
-}
-
-.back:hover {
-    color: rgb(53, 180, 157);
-}
-
+.back,
 .save {
-    float: right;
-    margin-right: 30px;
+    /*ボタンを緑の文字のみに変更*/
+    float: left;
     text-decoration: none;
+    margin-bottom: 40px;
+    padding: 0;
     border: none;
     background-color: rgba(245, 222, 179, 0);
     font-size: 20px;
@@ -44,19 +28,28 @@ form {
     color: rgb(35, 116, 101);
 }
 
+.save {
+    float: right;
+}
+
+.back:hover,
 .save:hover {
     color: rgb(53, 180, 157);
 }
 
 h1 {
-    margin: 50px 20px 20px;
+    margin: 20px 0 40px;
     clear: both;
     font-size: 30px;
 }
 
+form {
+    padding: 30px 20px 40px;
+}
+
 section {
     border: solid 1px rgb(35, 116, 101);
-    padding: 40px 30px;
+    padding: 20px;
 }
 
 .contents {
@@ -101,17 +94,17 @@ select,
     margin-bottom: 10px;
 }
 
-button {
+.add {
     font-size: 18px;
     padding: 0.3em 1em;
-    margin: 30px 10px;
+    margin: 0 20px 40px;
     background-color: rgb(107, 197, 182);
     border: solid 2px rgb(107, 197, 182);
     cursor: pointer;
     color: white;
 }
 
-button:hover {
+.add:hover {
     background-color: rgb(255, 255, 255, 0.700);
     color: rgb(70, 70, 70);
 }

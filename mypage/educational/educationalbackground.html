@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <title>学歴を編集</title>
     <link rel="stylesheet" href="educationalbackground.css">
+    <script src="educational.js"></script>
 </head>
 
 <body>
     <article>
+
         <form action="#" name="form">
 
-            <button class="back" type="button">＜&nbsp;戻る</button>
-            <button class="save" type="button">保存</button>
-            <h1>最終学歴</h1>
+            <button class="back" type="button" id="back">＜&nbsp;マイページへ</button>
+            <button class="save" type="button" id="save">保存</button>
 
+            <h1>最終学歴</h1>
             <section>
-                <p class="contents">学校種別&nbsp;
+                <p class="contents">学校種別&nbsp;</p>
+                <p>
                     <select name="schooltype">
                         <option value="">--</option>
                         <option value="大学院">大学院</option>
@@ -28,10 +31,12 @@
                         <option value="その他">その他</option>
                     </select>
                 </p>
+
                 <p class="border"></p>
 
 
-                <p class="contents">専攻&nbsp;
+                <p class="contents">専攻&nbsp;</p>
+                <p>
                     <select name="major">
                         <option value="">--</option>
                         <option value="法学・政策系">法学・政策系</option>
@@ -80,20 +85,20 @@
                 <input class="text" type="text" name="depaetmentname" id="depaetmentname" placeholder="○○大学">
                 <p class="border"></p>
 
-
-
-
-                <p class="contents">入学年月日&nbsp;
+                <p class="contents">入学年月日&nbsp;</p>
+                <p>
                     <input class="date" type="date" name="admissiondate">
                 </p>
                 <p class="border"></p>
 
-                <p class="contents">卒業年月日&nbsp;
+                <p class="contents">卒業年月日&nbsp;</p>
+                <p>
                     <input class="date" type="date" name="graduatedate">
                 </p>
                 <p class="border"></p>
 
-                <p class="contents">卒業区分&nbsp;
+                <p class="contents">卒業区分&nbsp;</p>
+                <p>
                     <select name="category">
                         <option value="">--</option>
                         <option value="卒業">卒業</option>
@@ -101,12 +106,12 @@
                         <option value="中退">中退</option>
                     </select>
                 </p>
+                <p class="border"></p>
+
             </section>
-
-
         </form>
 
-        <button type="button">学歴を追加する</button>
+        <button class="add" type="button">学歴を追加する</button>
 
     </article>
 </body>

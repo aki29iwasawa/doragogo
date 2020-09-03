@@ -4,7 +4,7 @@ function writemypage(data) {
 
     //CSS
 
-    changeCSS("mypage.css", 0);
+    changeCSS("../../mypage/mypage/mypage.css", 0);
 
     //changScript("../mypage/js/mypage.js",3);
 

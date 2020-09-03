@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>個人情報を編集</title>
     <link rel="stylesheet" href="registrationinformation.css">
-    <script src="registrationinformation.js" defer></script>
+    <script src="registrationinformation.js"></script>
 </head>
 
 <body>
@@ -13,7 +13,9 @@
 
         <form action="#" name="form">
 
+            <button class="back" type="button" id="back">＜&nbsp;マイページへ</button>
             <button class="save" type="button" id="save">保存</button>
+
             <h1>個人情報を編集</h1>
 
             <p class="contents"><label for="firstname">名</label></p>
@@ -27,10 +29,10 @@
             <p class="contents">性別</p>
             <p>
                 <select name="gender">
-                        <option value="" hidden>性別を選択</option>
-                        <option value="male" label="男性">男性</option>
-                        <option value="female" label="女性">女性</option>
-                    </select>
+                    <option value="" hidden>性別を選択</option>
+                    <option value="male" label="男性">男性</option>
+                    <option value="female" label="女性">女性</option>
+                </select>
             </p>
             <p class="border"></p>
 
@@ -39,15 +41,15 @@
             <p class="border"></p>
 
             <p class="contents">メール</p>
-            <p>kakuryou@hotmail.com<button class="save" type="button" onclick="mail()">編集</button></p>
+            <p>kakuryou@hotmail.com<button class="edit" type="button" onclick="mail()">編集</button></p>
             <p class="border"></p>
 
             <p class="contents">電話番号</p>
-            <p>09012345678<button class="save" type="button" onclick="phone()">編集</button></p>
+            <p>09012345678<button class="edit" type="button" onclick="phone()">編集</button></p>
             <p class="border"></p>
 
             <p class="contents"></p>
-            <p class="certificate">身分証明書<button class="save" type="button" onclick="certificate()">編集</button></p>
+            <p class="certificate">身分証明書<button class="edit" type="button" onclick="certificate()">編集</button></p>
             <p class="border"></p>
         </form>
     </article>

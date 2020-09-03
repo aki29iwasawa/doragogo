@@ -8,7 +8,7 @@ function writeregistration(data) {
 
     var w = '<article><form action="#" name="form">';
 
-    w = w + '<button class="back" type="button" id="back">＜&nbsp;マイページへ</button>';
+    w = w + '<button class="back" type="button" id="back">＜&nbsp;戻る</button>';
 
     w = w + '<button class="save" type="button" id="save">保存</button><h1>個人情報を編集</h1>';
 
@@ -24,11 +24,11 @@ function writeregistration(data) {
 
     w = w + '<p class="contents">生年月日</p><input class="date" type="date" name="date"><p class="border"></p>';
 
-    w = w + '<p class="contents">メール</p><p><input id="email"></input><button class="edit" type="button" id="mail-edit"">編集</button></p><p class="border"></p>';
+    w = w + '<p class="contents">メール</p><p><input id="email"></input><button class="save" type="button" id="mail-edit"">編集</button></p><p class="border"></p>';
 
-    w = w + '<p class="contents">電話番号</p><p><input id="tel"></input><button class="edit" type="button" id="tel-edit"">編集</button></p><p class="border"></p>';
+    w = w + '<p class="contents">電話番号</p><p><input id="tel"></input><button class="save" type="button" id="tel-edit"">編集</button></p><p class="border"></p>';
 
-    w = w + '<p class="contents"></p><p class="certificate">身分証明書<button class="edit" type="button" id="cert-edit"">編集</button></p><p class="border"></p</form></article>';
+    w = w + '<p class="contents"></p><p class="certificate">身分証明書<button class="save" type="button" id="cert-edit"">編集</button></p><p class="border"></p</form></article>';
 
 
 
@@ -49,7 +49,7 @@ function writeregistration(data) {
 
     $("#back").on("click", function() {
 
-        writemypage(data);
+        history.back();
 
     });
 

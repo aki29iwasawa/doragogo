@@ -5,7 +5,8 @@ body {
 
 article {
     background-color: rgb(255, 255, 255, 0.700);
-    width: 50%;
+    width: 55%;
+    min-width: 650px;
     border-radius: 30px;
     margin: 0 auto;
     padding: 20px 50px;
@@ -13,27 +14,13 @@ article {
     box-sizing: border-box;
 }
 
-
-/*
-a {
-    float: right;
-    margin-right: 30px;
+.back,
+.save,
+.edit {
+    /*ボタンを緑の文字のみに変更*/
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(35, 116, 101);
-}
-
-a:hover {
-    color: rgb(53, 180, 157);
-}
-*/
-
-.save {
-    /*ボタンを緑の文字のみのリンクに変更*/
-    float: right;
-    margin-right: 30px;
-    text-decoration: none;
+    margin-bottom: 40px;
+    padding: 0;
     border: none;
     background-color: rgba(245, 222, 179, 0);
     font-size: 20px;
@@ -41,18 +28,33 @@ a:hover {
     color: rgb(35, 116, 101);
 }
 
-.save:hover {
+.back {
+    float: left;
+}
+
+.save,
+.edit {
+    float: right;
+}
+
+.edit {
+    margin-right: 30px;
+}
+
+.back:hover,
+.save:hover,
+.edit:hover {
     color: rgb(53, 180, 157);
 }
 
 h1 {
-    margin: 20px 20px 40px 20px;
+    margin: 20px 0 40px;
     clear: both;
     font-size: 30px;
 }
 
 form {
-    padding: 20px;
+    padding: 30px 20px 40px;
 }
 
 .contents {
