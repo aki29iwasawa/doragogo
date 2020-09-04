@@ -97,7 +97,7 @@ select,
 .add {
     font-size: 18px;
     padding: 0.3em 1em;
-    margin: 0 20px 40px;
+    margin: 40px 20px;
     background-color: rgb(107, 197, 182);
     border: solid 2px rgb(107, 197, 182);
     cursor: pointer;

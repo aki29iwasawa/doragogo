@@ -5,11 +5,112 @@ body {
 
 article {
     background-color: rgb(255, 255, 255, 0.700);
-    width: 680px;
-    height: 100%;
+    width: 55%;
+    min-width: 650px;
     border-radius: 30px;
     margin: 0 auto;
-    padding: 20px 50px 40px;
+    padding: 20px 50px;
     color: rgb(70, 70, 70);
     box-sizing: border-box;
+}
+
+.back,
+.save {
+    /*ボタンを緑の文字のみに変更*/
+    float: left;
+    text-decoration: none;
+    margin-bottom: 40px;
+    padding: 0;
+    border: none;
+    background-color: rgba(245, 222, 179, 0);
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(35, 116, 101);
+}
+
+.save {
+    float: right;
+}
+
+.back:hover,
+.save:hover {
+    color: rgb(53, 180, 157);
+}
+
+h1 {
+    margin: 20px 0;
+    clear: both;
+    font-size: 30px;
+}
+
+form {
+    padding: 30px 20px 40px;
+}
+
+section {
+    border: solid 1px rgb(35, 116, 101);
+    padding: 20px;
+}
+
+.contents {
+    clear: both;
+    padding-top: 30px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contents:first-child {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.border {
+    margin: 5px 0 5px;
+    border-bottom: solid 1px rgb(35, 116, 101);
+}
+
+.text,
+.qualification {
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    padding-left: 0.5em;
+    margin: 5px 0 15px;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+}
+
+.text {
+    width: 5em;
+    text-align: right;
+}
+
+.text:focus,
+.qualification:focus {
+    background-color: rgb(255, 255, 255, 0.700);
+    outline: none;
+}
+
+select {
+    height: 35px;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.add {
+    font-size: 18px;
+    padding: 0.3em 1em;
+    margin: 40px 20px;
+    background-color: rgb(107, 197, 182);
+    border: solid 2px rgb(107, 197, 182);
+    cursor: pointer;
+    color: white;
+}
+
+.add:hover {
+    background-color: rgb(255, 255, 255, 0.700);
+    color: rgb(70, 70, 70);
 }

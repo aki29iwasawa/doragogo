@@ -42,11 +42,19 @@ function desiredcondition(data) {
 
     });
 
+    $("#occupation").on("click", function() {
+
+        occupation(data);
+
+    });
+
     $("#cancel").on("click", function() {
 
         desiredcondition(data);
 
     });
+
+
 
 
 
