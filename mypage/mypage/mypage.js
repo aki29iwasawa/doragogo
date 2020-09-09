@@ -80,7 +80,7 @@ function writemypage(data) {
 
     //語学力資格
 
-    $("#langage").on("click", function() {
+    $("#language").on("click", function() {
 
         language(data);
 
