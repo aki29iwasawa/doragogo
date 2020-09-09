@@ -5,11 +5,11 @@ body {
 
 article {
     background-color: rgb(255, 255, 255, 0.700);
-    width: 680px;
-    height: 100%;
+    width: 55%;
+    min-width: 650px;
     border-radius: 30px;
     margin: 0 auto;
-    padding: 20px 50px 40px;
+    padding: 20px 50px;
     color: rgb(70, 70, 70);
     box-sizing: border-box;
 }

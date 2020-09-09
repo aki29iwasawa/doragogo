@@ -25,6 +25,13 @@ function skill(data) {
 
     });
 
+    //職歴を追加
+
+    $("#addskill").on("click", function() {
+
+        skilloccu(data);
+
+    });
 
 
 }
