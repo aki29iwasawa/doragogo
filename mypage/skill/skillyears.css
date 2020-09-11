@@ -14,24 +14,21 @@ article {
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
 h1 {
     float: left;
     margin-bottom: 30px;
     font-size: 30px;
 }
 
-h2 {
+li {
     clear: both;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-section {
-    margin: 30px 10px;
 }
 
 button {
-    float: right;
     text-decoration: none;
     border: none;
     margin-right: 10px;
@@ -43,22 +40,4 @@ button {
 
 button:hover {
     color: rgb(53, 180, 157);
-}
-
-p {
-    clear: both;
-}
-
-div {
-    margin-left: 10px;
-}
-
-.border {
-    margin: 5px 0 5px;
-    border-bottom: solid 1px rgb(35, 116, 101);
-}
-
-li {
-    list-style: none;
-    float: left;
 }
