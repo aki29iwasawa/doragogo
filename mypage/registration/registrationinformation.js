@@ -40,7 +40,7 @@ function writeregistration(data) {
 
     $("#sex").val(data.sex);
 
-    $("birthday").val(data.regdate);
+    $("#birthday").val(data.birthday);
 
     $("#email").val(data.loginid);
 
@@ -112,10 +112,10 @@ function writeregistration(data) {
 
 function save(data) {
 
-    data.fname = $("firstname").val();
-    data.lname = $("lastname").val();
+    data.fname = $("#firstname").val();
+    data.lname = $("#lastname").val();
     data.sex = $("#sex").val();
-    data.birthday = $("birthday").val();
+    data.birthday = $("#birthday").val();
     data.loginid = $("#email").val();
     data.tel = $("#tel").val();
 
@@ -163,11 +163,9 @@ function save(data) {
 
                 alert('変更を保存しました');
 
-                $("article").remove();
 
                 console.log(data);
 
-                writeregistration(data);
 
             }
         }
