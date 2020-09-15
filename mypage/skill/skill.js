@@ -17,6 +17,21 @@ function skill(data) {
     $("body").append("article").html(w);
 
 
+
+    if (sessionStorage.getItem('skill01') && sessionStorage.getItem('skill02')) {
+        var skill01 = sessionStorage.getItem('skill01').split(',');
+        var skill02 = sessionStorage.getItem('skill02').split(',');
+
+        for (var i = 0; i < skill01.length; i++) {
+            $(".add").before('<p class="contents">' + skill01[i] + '</p><p>' + skill02[i] + '<button class="delete" type="button" id="delete">削除</button></p><p class="border"></p>');
+        }
+
+    }
+
+
+
+
+
     //マイページへ戻る
 
     $("#back").on("click", function() {
@@ -32,6 +47,12 @@ function skill(data) {
         skilloccu(data);
 
     });
+
+
+
+
+
+
 
 
 }

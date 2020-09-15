@@ -17,9 +17,20 @@ function skillyears(data) {
     $("button").on("click", function() {
 
         var i = $('button').index(this);
+        var ret = $(".back")[i].textContent;
 
+        var array = [];
 
-        console.log(i);
+        if (sessionStorage.getItem("skill02")) {
+            array = sessionStorage.getItem("skill02").split(',');
+            console.log(array);
+        }
+
+        array.push(ret);
+
+        sessionStorage.setItem('skill02', array);
+
+        console.log(ret);
 
         skill(data);
 

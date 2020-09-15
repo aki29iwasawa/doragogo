@@ -54,6 +54,7 @@ function writemypage(data) {
 
         writeregistration(data);
 
+
     });
 
 

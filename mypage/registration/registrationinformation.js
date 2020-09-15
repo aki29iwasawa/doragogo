@@ -16,33 +16,42 @@ function writeregistration(data) {
 
     w = w + '<p class="contents"><label for="lastname">姓</label></p><input class="text" type="input" name="lastname" id="lastname" placeholder="Guo"><p class="border"></p>';
 
-    w = w + '<p class="contents">性別</p><p><select name="gender">';
+    w = w + '<p class="contents">性別</p><p><select name="gender" id="sex">';
 
-    w = w + '<option value="" hidden>性別を選択</option><option value="male" label="男性">男性</option><option value="female" label="女性">女性</option>';
+    w = w + '<option value="" hidden>性別を選択</option><option value="男性" label="男性">男性</option><option value="女性" label="女性">女性</option>';
 
     w = w + '</select></p><p class="border"></p>';
 
-    w = w + '<p class="contents">生年月日</p><input class="date" type="date" name="date"><p class="border"></p>';
+    w = w + '<p class="contents">生年月日</p><input class="date" type="date" name="date" id="birthday"><p class="border"></p>';
 
-    w = w + '<p class="contents">メール</p><p><input id="email"></input><button class="edit" type="button" id="mail-edit"">編集</button></p><p class="border"></p>';
+    w = w + '<p class="contents">メール</p><p><input id="email"></input><button class="edit" type="button" id="mailedit"">編集</button></p><p class="border"></p>';
 
-    w = w + '<p class="contents">電話番号</p><p><input id="tel"></input><button class="edit" type="button" id="tel-edit"">編集</button></p><p class="border"></p>';
+    w = w + '<p class="contents">電話番号</p><p><input id="tel"></input><button class="edit" type="button" id="teledit"">編集</button></p><p class="border"></p>';
 
-    w = w + '<p class="contents"></p><p class="certificate">身分証明書<button class="edit" type="button" id="cert-edit"">編集</button></p><p class="border"></p</form></article>';
-
-
-
-
+    w = w + '<p class="contents"></p><p class="certificate">身分証明書<button class="edit" type="button" id="certedit"">編集</button></p><p class="border"></p</form></article>';
 
     $("body").append("article").html(w);
+
+
 
     $("#firstname").val(data.fname);
 
     $("#lastname").val(data.lname);
 
+    $("#sex").val(data.sex);
+
+    $("birthday").val(data.regdate);
+
     $("#email").val(data.loginid);
 
     $("#tel").val(data.tel);
+
+
+
+    //画面上部へ
+
+    $("html,body").animate({ scrollTop: 0 }, 600);
+
 
 
     //マイページへ戻る
@@ -52,6 +61,7 @@ function writeregistration(data) {
         writemypage(data);
 
     });
+
 
 
     //全体保存click
@@ -66,9 +76,9 @@ function writeregistration(data) {
 
     //メール編集   
 
-    $("#mail-edit").on("click", function() {
+    $("#mailedit").on("click", function() {
 
-        mail - edit(data.loginid);
+        mailedit(data.loginid);
 
     });
 
@@ -76,9 +86,9 @@ function writeregistration(data) {
 
     //電話番号編集
 
-    $("#tel-edit").on("click", function() {
+    $("#teledit").on("click", function() {
 
-        tel - edit(data.tel);
+        teledit(data.tel);
 
     });
 
@@ -86,9 +96,9 @@ function writeregistration(data) {
 
     //身分証明書編集
 
-    $("#cert-edit").on("click", function() {
+    $("#certedit").on("click", function() {
 
-        cert - edit(data.tel);
+        certedit(data.tel);
 
     });
 
@@ -100,54 +110,66 @@ function writeregistration(data) {
 
 
 
+function save(data) {
 
+    data.fname = $("firstname").val();
+    data.lname = $("lastname").val();
+    data.sex = $("#sex").val();
+    data.birthday = $("birthday").val();
+    data.loginid = $("#email").val();
+    data.tel = $("#tel").val();
 
+    console.log(data);
 
+    $.ajax({
 
-/*
+        url: "http://116.58.178.65:8545",
+        //url: "http://10.8.1.18:8545",
 
-function save() {
+        type: "POST",
 
+        dataType: "json",
 
+        headers: {
 
-    var count = 0;
+            'Content-Type': 'application/json'
 
+        },
 
+        data: JSON.stringify({
 
-    if (document.form.firstname.value == "") {
+            "jsonrpc": "2.0",
 
-        count = 1;
+            "method": "do_userUpdate",
 
-    } else if (document.form.lastname.value == "") {
+            "params": [
+                data,
+                "0xd31a7421ad05f5589d438ca9bdc4d34ff1c1748c075fb1b1007bf425ea1797a0"
+            ],
 
-        count = 1;
+            "id": 67,
 
-    } else if (document.form.gender.value == "") {
+        }),
 
-        count = 1;
+        success: function(data) {
 
-    } else if (document.form.date.value == "") {
+            if (data.error) {
 
-        count = 1;
+                alert('保存できませんでした');
 
-    }
+                $("h1").after("<p class='attention'>入力項目を確認してください。</p>")
 
+            } else {
 
+                alert('変更を保存しました');
 
-    if (count) {
+                $("article").remove();
 
-        alert('未入力項目があります');
+                console.log(data);
 
-        return false;
+                writeregistration(data);
 
-    } else {
-
-        alert('保存しました')
-
-        return true;
-
-    }
-
-
-
-}*/
+            }
+        }
+    });
+};

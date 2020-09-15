@@ -104,6 +104,18 @@ function skilloccu(data) {
 
         var i = $('button').index(this);
         var ret = $("li")[i].textContent;
+
+        var array = [];
+
+        if (sessionStorage.getItem("skill01")) {
+            array = sessionStorage.getItem("skill01").split(',');
+            console.log(array);
+        }
+
+        array.push(ret);
+
+        sessionStorage.setItem('skill01', array);
+
         console.log(ret);
 
         skillyears(data);
