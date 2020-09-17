@@ -8,9 +8,9 @@ function skill(data) {
     w = w + '<button class="save" type="button" id="save">保存</button>';
 
     w = w + '<h1>経験・スキル</h1><section><div>';
-    w = w + '<p class="contents">経験職種</p><p>経験年数';
-    w = w + '<button class="delete">削除</button>';
-    w = w + '</p><p class="border"></p>';
+    /*    w = w + '<p class="contents">経験職種</p><p>経験年数';
+        w = w + '<button class="delete">削除</button>';
+        w = w + '</p><p class="border"></p>';*/
     w = w + '<button class="add" type="button" id="addskill">職種経験を追加</button>';
     w = w + '</section></form></article>';
 
@@ -65,12 +65,11 @@ function skill(data) {
             skill01.splice(index, 1)
             skill02.splice(index, 1)
 
-            sessionStorage.setItem('skill01');
-            sessionStorage.setItem('skill02');
+            sessionStorage.setItem('skill01', skill01);
+            sessionStorage.setItem('skill02', skill02);
 
         };
 
-        skill(data);
 
     });
 };
